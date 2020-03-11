@@ -7,7 +7,7 @@ export default function render(table, title, sorts, initSorts) {
   sorts.shift();
   if (!sorts.length) {
     // eslint-disable-next-line no-param-reassign
-    sorts = initSorts;
+    sorts = [...initSorts];
   }
   setTimeout(render, 2000, table, title, sorts, initSorts);
 }
