@@ -10,9 +10,9 @@ export default function renderTableTitle(table, by, how) {
   if (by !== 'default') {
     const forSymbol = table.querySelector(`#${by}`);
     if (how === 'ascending') {
-      forSymbol.innerText += '\u{2191}';
+      forSymbol.textContent += '\u{2191}';
     } else {
-      forSymbol.innerText += '\u{2193}';
+      forSymbol.textContent += '\u{2193}';
     }
   }
 }
